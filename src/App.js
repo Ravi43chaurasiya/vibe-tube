@@ -1,11 +1,19 @@
+import Body from "./components/Body";
+import Head from "./components/Head";
+import {Provider} from "react-redux"
+import store from "./utils/store";
 
 
 
 function App() {
   return (
+    <Provider store={store}> 
     <div className="App">
-       <h1 className='text-red-800'>hello vibetube</h1>
-    </div>
+    <Head></Head>
+    <Body></Body>
+ </div>
+ </Provider>
+   
   );
 }
 

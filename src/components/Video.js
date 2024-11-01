@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Video = ({info}) => {
   console.log("video info",info);
@@ -19,7 +20,7 @@ console.log("thitle",thumbnails);
       </div>
       <div className='flex flex-col  w-fit md:w[460]'>
         <span className='text-white '>{title}</span>
-        <span className='text-white text-gray-600'>{channelTitle}</span>
+        <Link to="/channel"><span className='text-white text-gray-600 hover:text-red-200'>{channelTitle}</span></Link>
       </div>
       <div>
         <span className='text-gray-400'>

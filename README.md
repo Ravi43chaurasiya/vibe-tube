@@ -34,3 +34,6 @@ module.exports = {
   - for new credentials click on + CREATE CREDENTIAL
   - VIDEOScONTAINER done
    - Video done
+
+  - watch page done.
+  

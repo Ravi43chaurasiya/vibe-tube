@@ -1,14 +1,17 @@
 import React from 'react';
 import { FaHome, FaHistory, FaMusic, FaFilm, FaShoppingBag, FaGamepad, FaRegHeart, FaFire, FaPlay, FaBook, FaCog, FaFlag, FaQuestionCircle, FaCommentDots } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const SideBarExpand = () => {
   return (
     <div className='text-white w-60'>
       {/* Home Section */}
       <div className='bg-black py-3 px-4 border-b border-gray-700'>
+        
         <div className='flex items-center space-x-3 hover:bg-gray-800 p-2 rounded-lg cursor-pointer'>
+          
           <FaHome />
-          <h3>Home</h3>
+          <h3><Link to="/">Home</Link></h3>
         </div>
         <div className='flex items-center space-x-3 hover:bg-gray-800 p-2 rounded-lg cursor-pointer'>
           <FaFire />

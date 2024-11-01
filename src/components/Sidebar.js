@@ -4,11 +4,13 @@ import { useSelector } from 'react-redux'
 import SideBarContracted from './SideBarContracted'
 
 const Sidebar = () => {
-  const sideBar=useSelector(store=>store.app.isMenuOpen)
+  const sideBar=useSelector(store=>store.app)
   return (
     <div className=''>
-      {sideBar?<SideBarExpand></SideBarExpand>:<SideBarContracted></SideBarContracted>}
+      {sideBar.isMenuOpen?<SideBarExpand></SideBarExpand>:<SideBarContracted></SideBarContracted>}
       
+      
+    
     </div>
   )
 }

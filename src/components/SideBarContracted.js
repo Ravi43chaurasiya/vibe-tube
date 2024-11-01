@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaHome, FaFire, FaPlay, FaUserCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const SideBarContracted = () => {
   return (
@@ -7,7 +8,8 @@ const SideBarContracted = () => {
       {/* Home Icon with Tooltip */}
       <div className='relative group'>
         <div className='flex flex-col items-center cursor-pointer hover:text-gray-400'>
-          <FaHome size={24} />
+          <Link to="/"><FaHome size={24} /></Link>
+          
         </div>
         <span className="absolute left-12 -top-1.5 bg-gray-700 text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
           Home
